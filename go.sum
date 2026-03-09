@@ -1,0 +1,4 @@
+github.com/crawlab-team/bm25 v0.0.0-20250328025100-5014dda86138 h1:IbMH1qFoERnv6tyS37gopuEuhz2Y8Am+p3KUwOjFr3s=
+github.com/crawlab-team/bm25 v0.0.0-20250328025100-5014dda86138/go.mod h1:yop6SXFLxGhP5S6PgrJYLDi1pzqRgJzOTpcPQNAHXFA=
+golang.org/x/text v0.24.0 h1:dd5Bzh4yt5KYA8f9CJHCP4FB4D51c2c6JvN37xJJkJ0=
+golang.org/x/text v0.24.0/go.mod h1:L8rBsPeo2pSS+xqN0d5u2ikmjtmoJbDBT1b7nHvFCdU=
