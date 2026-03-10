@@ -1,6 +1,7 @@
 package profiles
 
 import (
+	"slices"
 	"strings"
 
 	"github.com/RayanMalki/resumetailor-core/profiles/data"
@@ -31,15 +32,16 @@ func GetAll() map[Discipline]Profile {
 	return out
 }
 
+// func uses 2 for loops, can be optimized
 func BucketForTerm(profile Profile, term string) string {
 	if meta, ok := profile.CanonicalTerms[term]; ok && meta.Bucket != "" {
 		return meta.Bucket
 	}
 	for bucket, terms := range profile.Buckets {
-		for _, candidate := range terms {
-			if candidate == term {
-				return bucket
-			}
+		if slices.Contains(terms, term) {
+
+			return bucket
+
 		}
 	}
 	return "other"
